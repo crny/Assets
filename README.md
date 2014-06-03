@@ -62,27 +62,27 @@ You can collect several files into one, using a special syntax inclusions within
 ### Serialization interface
 
 Read manifest recursively (inside included files)
-```cs
+```php
 ->make('path/to/file' [, bool $includeRecursive = false]);
 ```
 
 Return inline tag (example: `<style>body{}</style>`)
-```cs
+```php
 ->make('path/to/file')->getInline([array $htmlAttributes = array()]);
 ```
 
 Return full asset path (example: `/var/www/public/assets/hash.js`)
-```cs
+```php
 ->make('path/to/file')->getSourcesPath();
 ```
 
 Return sources
-```cs
+```php
 ->make('path/to/file')->getSources();
 ```
 
 Return link tag (example: `<script src="path/to/compiled.file.js"></script>`)
-```cs
+```php
 ->make('path/to/file')->getLink([array $htmlAttributes = array()]);
 
 // alias: ->__toString();
