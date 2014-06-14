@@ -23,6 +23,9 @@ class Parser
     protected $drivers = [
         '\Assets\Driver\CssDriver',
         '\Assets\Driver\ScssDriver',
+        '\Assets\Driver\CoffeeDriver',
+        '\Assets\Driver\LessDriver',
+        '\Assets\Driver\JsDriver',
     ];
 
     /**
