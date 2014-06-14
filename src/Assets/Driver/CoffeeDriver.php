@@ -16,7 +16,7 @@ use CoffeeScript\Compiler as CoffeeScriptCompiler;
  * Class CssDriver
  * @package Assets\Driver
  */
-class ScssDriver
+class CoffeeDriver
     extends AbstractDriver
     implements DriverInterface
 {
