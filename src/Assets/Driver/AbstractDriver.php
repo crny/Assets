@@ -92,7 +92,7 @@ abstract class AbstractDriver
      */
     public function compile()
     {
-        if (App::environment('production')) {
+        if ($this->config->get(Config::C_MINIFY)) {
             return $this->cache(
                 function () {
                     return $this->parse();
