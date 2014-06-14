@@ -16,7 +16,7 @@ use lessc as LessCompiler;
  * Class CssDriver
  * @package Assets\Driver
  */
-class ScssDriver
+class LessDriver
     extends AbstractDriver
     implements DriverInterface
 {
